@@ -1,0 +1,490 @@
+@define-color bg_main #001218;
+@define-color bg_layer #003036;
+@define-color bg_highlight rgba(255, 255, 255, 0.15);
+@define-color bg_more_highlight rgba(255, 255, 255, 0.3);
+@define-color fg_main #ffffff;
+@define-color fg_highlight #00ffff;
+@define-color fg_disabled #767676;
+@define-color bg_disabled rgba(255, 255, 255, 0.06);
+@define-color bg_selection #007676;
+@define-color border_color rgba(255, 255, 255, 0.2);
+/* GTK */
+@define-color theme_fg_color alpha(@fg_main, 1);
+@define-color theme_text_color alpha(@fg_main, 1);
+@define-color theme_bg_color alpha(@bg_main, 1);
+@define-color theme_base_color alpha(@bg_main, 1);
+@define-color theme_selected_bg_color alpha(@bg_highlight, 1);
+@define-color theme_selected_fg_color alpha(@fg_highlight, 1);
+@define-color insensitive_bg_color alpha(@bg_main, 1);
+@define-color insensitive_fg_color alpha(@fg_main, 1);
+@define-color insensitive_base_color alpha(@bg_main, 1);
+@define-color theme_unfocused_fg_color alpha(@fg_main, 1);
+@define-color theme_unfocused_text_color alpha(@fg_main, 1);
+@define-color theme_unfocused_bg_color alpha(@bg_main, 1);
+@define-color theme_unfocused_base_color alpha(@bg_main, 1);
+@define-color theme_unfocused_selected_bg_color alpha(@bg_more_highlight, 1);
+@define-color theme_unfocused_selected_fg_color alpha(@fg_highlight, 1);
+@define-color borders aplha(@border_color, 1);
+@define-color unfocused_borders  aplha(@border_color, 1);
+@define-color warning_color #FBC02D;
+@define-color error_color #F44336;
+@define-color success_color #81C995;
+
+* {
+    color: @fg_main;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+*:selected {
+    background-color: @bg_highlight;
+    color: @fg_highlight;
+}
+
+*:disabled {
+    color: @fg_disabled;
+}
+
+window {
+    background-color: @bg_main;
+}
+
+selection  {
+    color: @fg_selection;
+    background-color: @bg_selection;
+}
+
+expander arrow {
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+    min-width: 16px;
+    min-height: 16px;
+    margin-right: 6px;
+}
+
+/* box */
+
+box > * {
+	margin-right: 4px;
+}
+
+box > *:last-child {
+	margin-right: 0;
+}
+
+box {
+    margin: 0;
+}
+
+flowboxchild {
+	padding: 8px;
+}
+
+/* tooltip */
+
+tooltip {
+    background-color: @bg_layer;
+    border-radius: 5px;
+}
+
+/* button */
+
+button {
+    border-radius: 5px;
+    padding: 10px 12px;
+    background-color: @bg_highlight;
+    transition: all 600ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+button:hover {
+    background-color: @bg_more_highlight;
+}
+
+button:disabled {
+    background-color: @bg_disabled;
+    color: @fg_disabled;
+}
+
+buttonbox button {
+    margin-right: 6px
+}
+
+buttonbox button:last-child {
+    margin-right: 0;
+}
+
+/* text input */
+
+entry {
+    min-height: 32px;
+    padding: 0 12px;
+    border-radius: 5px;
+    caret-color: currentColor;
+    box-shadow: inset 0 0 0 2px transparent;
+    background-color: @bg_highlight;
+    transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+entry:focus {
+    box-shadow: inset 0 0 0 2px @fg_highlight;
+}
+
+entry image {
+    margin: 0 6px;
+}
+
+/* spinbutton */
+
+spinbutton * {
+    background-color: @bg_highlight:
+    caret-color: currenColor;
+}
+
+spinbutton entry:focus {
+    box-shadow: inset 0 0 0 2px transparent;
+    background-color: @bg_highlight;
+}
+
+spinbutton text {
+    background-color: @bg_highlight;
+    padding: 0 12px;
+    border-radius: 5px 0 0 5px;
+}
+
+spinbutton button {
+    border-radius: 0;
+}
+
+spinbutton button:disabled {
+    background-color: @bg_highlight;
+}
+
+spinbutton button:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+spinbutton entry {
+    border-radius: 5px 0 0 5px;
+}
+
+/* other form elements */
+
+combobox arrow {
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+    min-height: 16px;
+    min-width: 16px;
+}
+
+/* spinner */
+
+@keyframes spin {
+    to {
+        -gtk-icon-transform: rotate(1turn);
+    }
+}
+
+spinner {
+    background: none;
+    opacity: 0;
+    -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+}
+
+spinner:checked {
+    opacity: 1;
+    animation: spin 1s linear infinite;
+}
+
+spinner:checked:disabled {
+    opacity: 0.5;
+}
+
+/* rubberband */
+
+rubberband, .rubberband {
+    border: 1px solid @fg_highlight;
+    background-color: @bg_highlight;
+}
+
+/* menu */
+
+menubar {
+    padding: 6px 12px 0 12px;
+}
+
+menubar menuitem {
+    padding: 6px;
+}
+
+menu  {
+    background-color: @bg_layer;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+menu menuitem {
+    padding: 8px 12px;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+menu menuitem:hover {
+    background-color: @bg_highlight;
+}
+
+menu menuitem radio, menu menuitem check {
+    margin: 0 12px 0 -4px;
+}
+
+menu separator {
+    border: none;
+}
+
+/* toolbar / headerbar / treeview */
+
+toolbar, headerbar {
+    padding: 10px 12px;
+    background-color:@bg_main;
+}
+
+toolbar button, headerbar button {
+    background-color: transparent;
+    margin: 0 3px;
+}
+
+toolbar button:hover, headerbar button:hover {
+    background-color: @bg_highlight;
+}
+
+toolbar button:disabled, headerbar button:disabled {
+    background-color: transparent;
+}
+
+treeview header button {
+    background-color: transparent;
+    margin-bottom: 6px;
+}
+
+/* tabs */
+
+tab {
+    margin: 0 16px 12px 0;
+}
+
+tab:last-child{
+    margin-right: 0;
+}
+
+tab:checked * {
+    color: @fg_highlight;
+}
+
+/* list */
+
+row {
+    padding: 6px 0;
+}
+
+/* path bar box */
+
+#pathbarbox button {
+    margin-right: 6px;
+}
+
+#pathbarbox button:last-child {
+    margin-right: 0;
+}
+
+/* sidebar */
+
+.sidebar .view {
+    padding: 4px;
+}
+
+/* dialog */
+
+dialog {
+    background-color: @bg_main;
+}
+
+.dialog-vbox {
+    padding: 12px;
+}
+
+/* progressbar - scale */
+
+progressbar, scale {
+    font-size: smaller;
+}
+
+scale slider {
+    min-height: 18px;
+    min-width: 18px;
+    margin: -8px;
+    background-color: @fg_main;
+    border-radius: 9999px;
+}
+
+scale indicator {
+    background-color: @fg_main;
+    color: transparent;
+    min-height: 3px;
+    min-width: 3px;
+}
+
+scale slider:disabled {
+    background-color: @fg_disabled;
+}
+
+scale.horizontal trough,
+scale.horizontal fill {
+    min-height: 3px;
+    margin: 12px 0;
+}
+
+scale.vertical trough,
+scale.vertical fill {
+    min-width: 3px;
+    margin: 0 12px;
+}
+
+progressbar.horizontal trough,
+progressbar.horizontal progress {
+    min-height: 6px;
+    margin: 6px 0;
+}
+
+progressbar.vertical trough,
+progressbar.vertical progress {
+    min-width: 6px;
+    margin: 0 6px;
+}
+
+progressbar trough, scale trough{
+    background-color: @bg_highlight;
+}
+
+progressbar progress, scale highlight {
+    background-color: @fg_highlight;
+}
+
+/* switch */
+
+switch {
+    background-color: @bg_highlight;
+    border: 6px solid @bg_main;
+    border-radius: 9999px;
+    background-clip: padding-box;
+}
+
+switch image {
+    -gtk-icon-transform: scale(0);
+}
+
+switch:checked {
+    background-color: @fg_highlight;
+}
+
+switch:disabled slider {
+    background-color: @fg_disabled;
+}
+
+switch slider {
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 9999px;
+    background-color: @fg_main;
+}
+
+/* check - radio */
+
+checkbutton, radiobutton {
+    padding: 6px 0;
+}
+
+checkbutton label, radiobutton label {
+    margin-left: 8px;
+}
+
+check, radio {
+    background-color: @bg_highlight;
+    color: @fg_highlight;
+    border: 3px solid @bg_highlight;
+}
+
+check {
+    min-width: 11px;
+    min-height: 11px;
+    border-radius: 3px;
+}
+
+radio {
+    min-width: 12px;
+    min-height: 12px;
+    border-radius: 9999px;
+}
+
+check:checked, radio:checked {
+    background-color: @fg_highlight;
+}
+
+/* scrollbar */
+
+scrollbar {
+    -GtkScrollbar-has-backward-stepper: false;
+    -GtkScrollbar-has-forward-stepper: false;
+}
+
+scrollbar slider {
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 9999px;
+    background-color: @bg_highlight;
+}
+
+/* frame */
+
+frame label {
+    margin: 4px;
+}
+
+frame border {
+    border: 1px solid @border_color;
+    padding: 10px;
+}
+
+/*separator {
+  min-width: 1px;
+  min-height: 1px;
+  background-color: @border_color;
+}*/
+
+/* thunar */
+
+.thunar .standard-view {
+    padding: 6px
+}
+
+.thunar separator {
+    border: none;
+}
+
+.thunar .sidebar {
+	padding: 0 6px;
+}
+
+.thunar .sidebar * {
+	border-radius: 5px;
+}
+
+.thunar separator {
+    background-color: transparent;
+}
+
+/* filechooser */
+
+filechooser > box {
+	margin-bottom : 12px;
+}
+
+
+

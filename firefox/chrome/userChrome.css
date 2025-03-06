@@ -1,0 +1,87 @@
+:root {
+  --toolbar-bgcolor: #26353a !important;
+  --toolbar-color: rgb(255, 255, 255) !important;
+  --lwt-accent-color: #001218 !important;
+  --lwt-accent-color-inactive: #001218 !important;
+  --toolbox-bgcolor: #001218 !important;
+  --toolbox-bgcolor-inactive: #001218 !important;
+  --lwt-text-color: rgb(255, 255, 255) !important;
+  --toolbar-field-background-color: #001218 !important;
+  --toolbar-field-focus-background-color: #001218 !important;
+  --toolbar-field-color: rgb(255, 255, 255) !important;
+  --toolbar-field-focus-color: rgb(255, 255, 255) !important;
+  --lwt-tab-line-color: #001218 !important;
+  --arrowpanel-background: #003036 !important;
+  --arrowpanel-color: rgb(255, 255, 255) !important;
+  --tab-loading-fill: #001218 !important;
+  --toolbarbutton-icon-fill: rgb(255, 255, 255) !important;
+  --newtab-text-primary-color: rgb(255, 255, 255) !important;
+  --urlbarView-highlight-color: rgb(255, 255, 255) !important;
+  --urlbarView-highlight-color: rgb(255, 255, 255) !important;
+  --sidebar-text-color: rgb(255, 255, 255) !important;
+  --tab-selected-textcolor: rgb(255, 255, 255) !important;
+  --tab-selected-bgcolor: #26353a !important;
+  --toolbar-field-border-color: rgba(0, 0, 0) !important;
+  --button-background-color-hover: rgba(255, 255, 255, 0.15) !important;
+  --button-background-color-active: rgba(255, 255, 255, 0.15) !important;
+  --urlbarView-hover-background: rgba(255, 255, 255, 0.15) !important;
+  --urlbar-icon-border-radius: 5px !important;
+}
+
+.button-background {
+  button:hover > & {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+  }
+}
+
+#urlbar-background,
+#urlbar {
+  border-radius: 5px !important;
+}
+.menupopup-arrowscrollbox {
+  border-radius: 5px !important;
+}
+
+/* Remove top space in the browser */
+.titlebar-spacer {
+  display: none !important;
+}
+
+/* Hide bookmark folder icon */
+.bookmark-item[container="true"] .toolbarbutton-icon {
+  display: none !important;
+}
+
+/* Clean context menu */
+/* Remove Email Image/Video */
+#context-sendimage,
+#context-sendvideo {
+  display: none !important;
+}
+
+/* Remove Inspect Accessibility Properties */
+#context-inspect-a11y {
+  display: none !important;
+}
+
+/* Remove Print Selection */
+#context-print-selection {
+  display: none !important;
+}
+
+/* Remove Set Image as Desktop Background */
+#context-setDesktopBackground,
+#context-sep-setbackground {
+  display: none !important;
+}
+
+/* Remove Save Link to Pocket */
+#context-savelinktopocket,
+#context-pocket {
+  display: none !important;
+}
+
+::selection {
+  background-color: #007676 !important;
+  color: white !important;
+}
