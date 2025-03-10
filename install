@@ -14,11 +14,7 @@ mkdir -p ~/.local/share/icons/
 cp -r icons/. ~/.local/share/icons/
 cp -r cursors/. ~/.local/share/icons/
 mkdir -p ~/.local/share/themes/$THEME_NAME
-cp -r gtk-2.0 ~/.local/share/themes/$THEME_NAME/
-cp -r gtk-3.0 ~/.local/share/themes/$THEME_NAME/
-cp -r gtk-4.0 ~/.local/share/themes/$THEME_NAME/
-cp -r wallpaper ~/.local/share/themes/$THEME_NAME/
-cp -r index.theme ~/.local/share/themes/$THEME_NAME/
+cp -r {gtk-2.0,gtk-3.0,gtk-4.0,wallpaper,index.theme} ~/.local/share/themes/$THEME_NAME/
 mkdir -p ~/.config/vim/colors
 cp -r vim/colors/. ~/.config/vim/colors/
 mkdir -p ~/.config/alacritty/themes

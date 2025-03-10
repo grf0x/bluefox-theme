@@ -14,12 +14,13 @@ let s:fg3="#00bbbb"
 let s:fg4="#607076"
 let s:bg1="#007676"
 
-" SPECIAL "
+" SELECTION "
 exe 'hi Visual guifg='s:fg1' guibg='s:bg1
 
 " WHITE "
 exe 'hi Normal guifg='s:fg1
 exe 'hi Function guifg='s:fg1
+exe 'hi Constant guifg='s:fg1
 exe 'hi PythonClass guifg='s:fg1
 exe 'hi Operator guifg='s:fg1
 exe 'hi Delimiter guifg='s:fg1
@@ -56,12 +57,16 @@ exe 'hi vimParenSep guifg='s:fg1
 exe 'hi vimOption guifg='s:fg1' cterm=bold'
 exe 'hi vimHiClear guifg='s:fg1' cterm=bold'
 exe 'hi vimFuncName guifg='s:fg1' cterm=bold'
+exe 'hi shOption guifg='s:fg1
+exe 'hi shCommandSub guifg='s:fg1
+exe 'hi shStatement guifg='s:fg1' cterm=bold'
 
 " CYAN "
 exe 'hi Conditional guifg='s:fg2' cterm=bold'
 exe 'hi keyword guifg='s:fg2' cterm=bold'
 exe 'hi Statement guifg='s:fg2' cterm=bold'
 exe 'hi tomlTable guifg='s:fg2' cterm=bold'
+exe 'hi VimwikiHeader1 guifg='s:fg2' cterm=bold'
 exe 'hi PythonClassVar guifg='s:fg2
 exe 'hi PythonBuiltinObj guifg='s:fg2
 exe 'hi PythonImport guifg='s:fg2
@@ -86,9 +91,14 @@ exe 'hi Number guifg='s:fg3
 exe 'hi String guifg='s:fg3
 exe 'hi Boolean guifg='s:fg3
 exe 'hi Character guifg='s:fg3
+exe 'hi VimwikiWeblink1 guifg='s:fg3' cterm=underline'
+exe 'hi shQuote guifg='s:fg3
+exe 'hi shVariable guifg='s:fg3
+exe 'hi shDerefSimple guifg='s:fg3
 
 " GREY "
 exe 'hi LineNr guifg='s:fg4
 exe 'hi Comment guifg='s:fg4
 exe 'hi NonText guifg='s:fg4
+exe 'hi shShebang guifg='s:fg4
 
