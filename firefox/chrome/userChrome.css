@@ -85,3 +85,12 @@
   background-color: #007676 !important;
   color: white !important;
 }
+
+.urlbarView-row {
+  background-color: transparent !important; 
+}
+
+.urlbarView-row:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important; 
+}
+

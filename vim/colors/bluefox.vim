@@ -46,6 +46,7 @@ exe 'hi cssBoxAttr guifg='s:fg1' cterm=bold'
 exe 'hi cssGradientAttr guifg='s:fg1' cterm=bold'
 exe 'hi cssBackgroundAttr guifg='s:fg1' cterm=bold'
 exe 'hi cssFlexibleBoxAttr guifg='s:fg1' cterm=bold'
+exe 'hi cssImportant guifg='s:fg1' cterm=bold'
 exe 'hi cssAttrComma guifg='s:fg1
 exe 'hi cssUnitDecorators guifg='s:fg1
 exe 'hi cssValueLength guifg='s:fg1
@@ -81,9 +82,11 @@ exe 'hi cssMediaProp guifg='s:fg2
 exe 'hi cssColorProp guifg='s:fg2
 exe 'hi cssAnimationProp guifg='s:fg2
 exe 'hi cssTransitionProp guifg='s:fg2
+exe 'hi cssPositioningProp guifg='s:fg2
 exe 'hi cssKeyFrameProp guifg='s:fg2
 exe 'hi cssUIProp guifg='s:fg2
 exe 'hi cssCascadeProp guifg='s:fg2
+exe 'hi cssCustomProp guifg='s:fg2
 exe 'hi vimSynType guifg='s:fg2
 
 " DARK CYAN "
@@ -91,10 +94,12 @@ exe 'hi Number guifg='s:fg3
 exe 'hi String guifg='s:fg3
 exe 'hi Boolean guifg='s:fg3
 exe 'hi Character guifg='s:fg3
+exe 'hi PreProc guifg='s:fg3
 exe 'hi VimwikiWeblink1 guifg='s:fg3' cterm=underline'
 exe 'hi shQuote guifg='s:fg3
 exe 'hi shVariable guifg='s:fg3
 exe 'hi shDerefSimple guifg='s:fg3
+exe 'hi shDeref guifg='s:fg3
 
 " GREY "
 exe 'hi LineNr guifg='s:fg4
