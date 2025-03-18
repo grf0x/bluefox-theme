@@ -100,6 +100,8 @@ exe 'hi shQuote guifg='s:fg3
 exe 'hi shVariable guifg='s:fg3
 exe 'hi shDerefSimple guifg='s:fg3
 exe 'hi shDeref guifg='s:fg3
+exe 'hi shspecialDQ guifg='s:fg3
+exe 'hi shSpecialNoZS guifg='s:fg3
 
 " GREY "
 exe 'hi LineNr guifg='s:fg4
