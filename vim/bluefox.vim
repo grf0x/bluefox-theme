@@ -25,6 +25,7 @@ exe 'hi PythonClass guifg='s:fg1
 exe 'hi Operator guifg='s:fg1
 exe 'hi Delimiter guifg='s:fg1
 exe 'hi tomlKey guifg='s:fg1
+exe 'hi cIncluded guifg='s:fg1
 exe 'hi pythonStrFormat guifg='s:fg1
 exe 'hi pythonExClass guifg='s:fg1
 exe 'hi pythonBuiltinFunc guifg='s:fg1' cterm=bold'
@@ -68,6 +69,9 @@ exe 'hi keyword guifg='s:fg2' cterm=bold'
 exe 'hi Statement guifg='s:fg2' cterm=bold'
 exe 'hi tomlTable guifg='s:fg2' cterm=bold'
 exe 'hi VimwikiHeader1 guifg='s:fg2' cterm=bold'
+exe 'hi cType guifg='s:fg2' cterm=bold'
+exe 'hi cInclude guifg='s:fg2' cterm=bold'
+exe 'hi Special guifg='s:fg2
 exe 'hi PythonClassVar guifg='s:fg2
 exe 'hi PythonBuiltinObj guifg='s:fg2
 exe 'hi PythonImport guifg='s:fg2
@@ -88,6 +92,7 @@ exe 'hi cssUIProp guifg='s:fg2
 exe 'hi cssCascadeProp guifg='s:fg2
 exe 'hi cssCustomProp guifg='s:fg2
 exe 'hi vimSynType guifg='s:fg2
+
 
 " DARK CYAN "
 exe 'hi Number guifg='s:fg3
