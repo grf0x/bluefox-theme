@@ -302,7 +302,7 @@ row {
 
 /* dialog */
 
-dialog {
+dialog, messagedialog > box {
     background-color: @bg_main_transparent;
 }
 
