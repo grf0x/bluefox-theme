@@ -68,7 +68,13 @@ exe 'hi Conditional guifg='s:fg2' cterm=bold'
 exe 'hi keyword guifg='s:fg2' cterm=bold'
 exe 'hi Statement guifg='s:fg2' cterm=bold'
 exe 'hi tomlTable guifg='s:fg2' cterm=bold'
+exe 'hi VimwikiHeaderChar guifg='s:fg2' cterm=bold'
 exe 'hi VimwikiHeader1 guifg='s:fg2' cterm=bold'
+exe 'hi VimwikiHeader2 guifg='s:fg2' cterm=bold'
+exe 'hi VimwikiHeader3 guifg='s:fg2' cterm=bold'
+exe 'hi VimwikiHeader4 guifg='s:fg2' cterm=bold'
+exe 'hi VimwikiHeader5 guifg='s:fg2' cterm=bold'
+exe 'hi VimwikiHeader6 guifg='s:fg2' cterm=bold'
 exe 'hi cType guifg='s:fg2' cterm=bold'
 exe 'hi cInclude guifg='s:fg2' cterm=bold'
 exe 'hi Special guifg='s:fg2
@@ -92,7 +98,7 @@ exe 'hi cssUIProp guifg='s:fg2
 exe 'hi cssCascadeProp guifg='s:fg2
 exe 'hi cssCustomProp guifg='s:fg2
 exe 'hi vimSynType guifg='s:fg2
-
+exe 'hi vimVarScope guifg='s:fg2
 
 " DARK CYAN "
 exe 'hi Number guifg='s:fg3
@@ -101,6 +107,7 @@ exe 'hi Boolean guifg='s:fg3
 exe 'hi Character guifg='s:fg3
 exe 'hi PreProc guifg='s:fg3
 exe 'hi VimwikiWeblink1 guifg='s:fg3' cterm=underline'
+exe 'hi VimwikiPre guifg='s:fg3
 exe 'hi shQuote guifg='s:fg3
 exe 'hi shVariable guifg='s:fg3
 exe 'hi shDerefSimple guifg='s:fg3
