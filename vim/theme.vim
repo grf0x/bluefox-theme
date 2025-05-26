@@ -29,6 +29,7 @@ exe 'hi cIncluded guifg='s:fg1
 exe 'hi pythonStrFormat guifg='s:fg1
 exe 'hi pythonExClass guifg='s:fg1
 exe 'hi pythonBuiltinFunc guifg='s:fg1' cterm=bold'
+exe 'hi pythonBuiltinType guifg='s:fg1' cterm=bold'
 exe 'hi cssColor guifg='s:fg1' cterm=bold'
 exe 'hi cssFunction guifg='s:fg1' cterm=bold'
 exe 'hi cssFunctionName guifg='s:fg1' cterm=bold'
